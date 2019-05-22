@@ -3,6 +3,7 @@
 
  before_install:
     - stty cols 80
+    - npm install -g testcafe
 
 dist: trusty
 sudo: required
