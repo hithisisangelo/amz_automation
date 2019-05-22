@@ -9,7 +9,7 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "test":  "testcafe chrome tests/amz_sanity.js"
+    "test":  "testcafe "chrome:headless" tests/amz_sanity.js"
 },
   "repository": {
     "type": "git",
