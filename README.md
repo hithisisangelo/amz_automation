@@ -2,15 +2,19 @@
 How to run
 Install testcafe via npm
 With Command npm install -g testcafe
-run the commands with 
-testcafe chrome amz_sanity.js
+
+```
+run the tests with 
+testcafe chrome amz_sanity.js -e 
+to run in headless please run this command
+testcafe "chrome:headless" amz_sanity.js -e
+or just simply run
+npm test
+```
 
 # set up with cicd travis ci
-Follow these directions if need to change anything
-But we added 
-
-"scripts": {
-"test":  "testcafe chrome tests/amz_sanity.js"
-},
-
-In our package-module so travis-ci will run npm-test and will be able to view results
+We setted up travis by adding a .travis.yml file for configurations
+And then we added a {}script tag in our package.json to make sure npm test runs 
+View :
+https://travis-ci.org/hithisisangelo/amz_automation
+For build summary and results
